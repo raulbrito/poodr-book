@@ -42,6 +42,7 @@ Enforce Single Responsability Everywhere
    * avoid need for comments
    * encourage reuse
    * easy to move to other classes
+   
 ```ruby
  def diameters
    wheels.collect { |wheel| diameter(wheel) } 
@@ -50,5 +51,6 @@ Enforce Single Responsability Everywhere
    wheel.rim + (wheel.tire * 2)
  end
 ```
+
  - isolate extra responsabilities in classes
    * and it doesn't even need to be a fully fledged class, it can also be in the context of the current class. It shows that it can be an experiment and start evolving into a own class if needed.
